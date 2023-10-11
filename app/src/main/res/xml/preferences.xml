@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check_box_preference_1"
+        android:title="Enable updates"
+        app:summary="Enable or disable data updates" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/updateInterval"
+        android:entryValues="@array/updateIntervalValues"
+        android:key="list_preference_1"
+        android:title="Update interval"
+        app:summary="Define how often updates will be performed" />
+    <EditTextPreference
+        android:defaultValue="Default welcome Message"
+        android:dialogMessage="Provide a message"
+        android:dialogTitle="Welcome Message"
+        android:key="welcome_message"
+        android:summary="Define the Welcome message to be shown"
+        android:title="Welcome Message" />
+</PreferenceScreen>
